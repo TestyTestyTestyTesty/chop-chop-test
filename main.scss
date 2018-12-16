@@ -193,3 +193,24 @@ body{
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
+
+  /*---------------------------------------------------------ie & edge support---------------------------------------------------------*/
+  @supports (-ms-ime-align:auto) {
+
+    footer{
+        nav{
+            ul{              
+                justify-content: space-around;
+            }      
+        }
+    }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    footer{
+        nav{
+            ul{              
+                justify-content: space-around;
+            }      
+        }
+    }
+}
